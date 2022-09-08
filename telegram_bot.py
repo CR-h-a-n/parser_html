@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import pprint
 
 
-TOKEN = '5678539181:AAGHl282z0hf01m9rZ8AtMJVkkvGcYM_4_o'
+TOKEN = '****************************************'
 bot = telebot.TeleBot(TOKEN)
 
 
