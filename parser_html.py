@@ -2,7 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 import pprint
 import json
-import datetime
 
 
 def parser_news(class_string):
@@ -26,7 +25,7 @@ parser_news('js-event-item')
 pprint.pprint(list_news)
 
 result = json.dumps(list_news)
-file_name = 'economic_calendar ' + str(datetime.datetime.now().strftime("%d_%m_%Y_%H_%M_%S")) + '.json'
+file_name = 'economic_calendar.json'
 with open(file_name, 'w') as f:
     json.dump(result, f)
 
